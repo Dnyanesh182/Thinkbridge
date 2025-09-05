@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Signup Form</h1>
+
+    <form class="signup-form">
+      <!-- Full Name -->
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+      <!-- Mobile -->
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+      <!-- Email -->
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <!-- Confirm Password -->
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password"
+        required>
+
+      <!-- Role -->
+      <label for="role">Select Your Role</label>
+      <select id="role" name="role" required>
+        <option value="">--Select Role--</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+        <option value="tester">Tester</option>
+        <option value="manager">Manager</option>
+      </select>
+
+      <!-- Terms -->
+      <label class="checkbox">
+        <input type="checkbox" name="terms" required> I confirm all the terms and conditions
+      </label>
+
+      <!-- Submit -->
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- Load DOM manipulation script -->
+  <script src="dom.js"></script>
+</body>
+
+</html>

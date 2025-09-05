@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 450px;
+  padding: 35px 25px;
+  border-radius: 15px;
+  background-color: #ffffffcc;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1b1b1b;
+  font-size: 28px;
+}
+
+/* Form layout */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Labels */
+.signup-form label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+/* Inputs & Select */
+.signup-form input,
+.signup-form select {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1.5px solid #bdc3c7;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Checkbox */
+.signup-form .checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.signup-form .checkbox input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Button */
+.signup-form button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-form button:hover {
+  background: linear-gradient(to right, #2ecc71, #3498db);
+  transform: translateY(-3px);
+}
+
+/* Feedback Message */
+.signup-form p {
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Success & Error states */
+.success {
+  border: 2px solid #2ecc71;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.4);
+}
+
+.error {
+  border: 2px solid #e74c3c;
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .signup-form input,
+  .signup-form select,
+  .signup-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
