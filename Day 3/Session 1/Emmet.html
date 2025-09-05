@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet Examples</title>
+</head>
+
+<body>
+    <!-- before -->
+    <!-- div+div>p>span+em^^bq -->
+
+    <!-- After -->
+    <div>
+        <h1>First Heading</h1>
+    </div>
+    <div>
+        <p>
+            <span>This is Span</span>
+            <em>This is Emphasis</em>
+        </p>
+    </div>
+    <blockquote>This is Blockquote</blockquote>
+
+    <!-- before -->
+    <!-- div>(header>ul>li*2>a)+footer>p -->
+
+    <!-- After -->
+    <div>
+        <header>
+            <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Bing</a></li>
+            </ul>
+        </header>
+        <footer>
+            <p>This is Footer</p>
+        </footer>
+    </div>
+
+    <!-- before -->
+    <!-- ul>li.item$@3*5 -->
+
+    <!-- After -->
+    <ul>
+        <li class="item3">Item 3</li>
+        <li class="item4">Item 4</li>
+        <li class="item5">Item 5</li>
+        <li class="item6">Item 6</li>
+        <li class="item7">Item 7</li>
+    </ul>
+
+    <!-- before -->
+    <!-- form>(label+input:text+br)*2+input:submit -->
+
+    <!-- After -->
+    <form>
+        <label>Username:</label>
+        <input type="text" name="username" title="Enter your username" placeholder="Username"><br>
+        <label>Password:</label>
+        <input type="text" name="password" title="Enter your password" placeholder="Password"><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- before -->
+    <!-- nav>ul>li*3>a -->
+
+    <!-- After -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- before -->
+    <!-- article>h2+p*2 -->
+
+    <!-- After -->
+    <article>
+        <h2>Article Title</h2>
+        <p>This is the first paragraph inside the article.</p>
+        <p>This is the second paragraph inside the article.</p>
+    </article>
+
+    <!-- before -->
+    <!-- div.wrapper>section#intro>h1{Welcome}+p{This is intro section} -->
+
+    <!-- After -->
+    <div class="wrapper">
+        <section id="intro">
+            <h1>Welcome</h1>
+            <p>This is intro section</p>
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f8fab4;
+  color: #222;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  background: #f08787;
+  padding: 1rem 0;
+  border-radius: 10px;
+  color: white;
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+.site-header .tagline {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #fee2ad;
+}
+
+/* Hamburger Menu */
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background: #ffc7a7;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #fee2ad;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background: #f08787;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+.skills-list li:hover {
+  background: #ffc7a7;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .main-nav ul {
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  #menu-toggle:checked + .hamburger + .main-nav ul {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

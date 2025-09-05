@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h1>Signup Form</h1>
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <label for="firstname">First Name: </label>
+            <input type="text" name="firstname" id="firstname" required /> <br /> <br />
+
+            <label for="lastname">Last Name: </label>
+            <input type="text" name="lastname" id="lastname" required /> <br /> <br />
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required /> <br /><br />
+
+            <label for="phone">Mobile no: </label>
+            <input type="tel" name="phone" id="phone" /> <br /><br />
+
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" aria-describedby="passwordHelp" minlength="9"
+                required />
+            <small id="passwordHelp">Password must be at least 9 characters</small> <br /><br />
+
+            <label for="confirm">Confirm Password: </label>
+            <input type="password" name="confirm" id="confirm" aria-describedby="passwordHelp" minlength="9" required />
+            <br /><br />
+
+            <label for="remember">
+                Remember Me
+                <input type="checkbox" name="remember" id="remember" required />
+            </label> <br /><br />
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>
