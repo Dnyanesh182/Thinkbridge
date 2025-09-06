@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 4: JavaScript Basics</title>
+    <link rel="stylesheet" href="session4.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Development</h1>
+            <nav>
+                <ul>
+                    <li><a href="session1.html">Session 1</a></li>
+                    <li><a href="session2.html">Session 2</a></li>
+                    <li><a href="session3.html">Session 3</a></li>
+                    <li><a href="session4.html">Session 4</a></li>
+                    <li><a href="session5.html">Session 5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>Session 4: JavaScript Basics</h2>
+                <p>Learn key JavaScript keywords and see live interactive examples.</p>
+            </div>
+        </section>
+
+        <section class="keywords">
+            <div class="container">
+                <h2>JavaScript Keywords</h2>
+                <div class="card-container">
+                    <div class="card" data-desc="Declares a variable with block scope."
+                        data-demo="let demoVar = 'Hello!'; alert(demoVar);">
+                        <h3>let</h3>
+                        <p>Variable Declaration</p>
+                    </div>
+                    <div class="card" data-desc="Declares a constant value."
+                        data-demo="const demoConst = 42; alert(demoConst);">
+                        <h3>const</h3>
+                        <p>Constant</p>
+                    </div>
+                    <div class="card" data-desc="Declares a function."
+                        data-demo="function greet(){ alert('Hi there!'); } greet();">
+                        <h3>function</h3>
+                        <p>Function</p>
+                    </div>
+                    <div class="card" data-desc="Creates a conditional statement."
+                        data-demo="if(true){ alert('Condition is true'); }">
+                        <h3>if</h3>
+                        <p>Conditional</p>
+                    </div>
+                    <div class="card" data-desc="Creates a loop that runs a set number of times."
+                        data-demo="for(let i=1;i<=3;i++){ console.log(i); } alert('Check console for loop');">
+                        <h3>for</h3>
+                        <p>Loop</p>
+                    </div>
+                </div>
+                <p id="keyword-description">Click a card to see the description and demo.</p>
+                <button id="demo-button">Run Demo</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dnyaneshwar Dhananjay Potdar</p>
+        </div>
+    </footer>
+
+    <script src="session4.js"></script>
+</body>
+
+</html>
