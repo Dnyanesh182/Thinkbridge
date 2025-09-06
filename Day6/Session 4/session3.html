@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 3: CSS Basics</title>
+    <link rel="stylesheet" href="session3.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Development</h1>
+            <nav>
+                <ul>
+                    <li><a href="session1.html">Session 1</a></li>
+                    <li><a href="session2.html">Session 2</a></li>
+                    <li><a href="session3.html">Session 3</a></li>
+                    <li><a href="session4.html">Session 4</a></li>
+                    <li><a href="">Session 5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>Session 3: CSS Basics</h2>
+                <p>Explore CSS keywords and see live previews of how they affect elements.</p>
+            </div>
+        </section>
+
+        <section class="keywords">
+            <div class="container">
+                <h2>CSS Properties</h2>
+                <div class="card-container">
+                    <div class="card" data-desc="Sets the text color of an element." data-style="color: #4a90e2;">
+                        <h3>color</h3>
+                        <p>Text Color</p>
+                    </div>
+                    <div class="card" data-desc="Sets the background color of an element."
+                        data-style="background-color: #ffcc00;">
+                        <h3>background-color</h3>
+                        <p>Background Color</p>
+                    </div>
+                    <div class="card" data-desc="Sets the margin outside an element." data-style="margin: 20px;">
+                        <h3>margin</h3>
+                        <p>Margin</p>
+                    </div>
+                    <div class="card" data-desc="Sets the padding inside an element."
+                        data-style="padding: 20px; background-color: #e3f2fd;">
+                        <h3>padding</h3>
+                        <p>Padding</p>
+                    </div>
+                    <div class="card" data-desc="Adds a border around an element."
+                        data-style="border: 2px solid #4a90e2; padding: 10px;">
+                        <h3>border</h3>
+                        <p>Border</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" data-desc="Sets the element to be flexible in a flex container."
+                        data-style="display: flex; gap: 10px;">
+                        <h3>display</h3>
+                        <p>Display Type</p>
+                    </div>
+                    <div class="card" data-desc="Sets the width of an element."
+                        data-style="width: 200px; background-color: #f0f0f0;">
+                        <h3>width</h3>
+                        <p>Width</p>
+                    </div>
+                    <div class="card" data-desc="Sets the height of an element."
+                        data-style="height: 150px; background-color: #d1e7dd;">
+                        <h3>height</h3>
+                        <p>Height</p>
+                    </div>
+                    <div class="card" data-desc="Sets the spacing between letters of text."
+                        data-style="letter-spacing: 2px; color: #4a90e2;">
+                        <h3>letter-spacing</h3>
+                        <p>Letter Spacing</p>
+                    </div>
+                    <div class="card" data-desc="Sets the spacing between lines of text."
+                        data-style="line-height: 1.8; color: #333;">
+                        <h3>line-height</h3>
+                        <p>Line Height</p>
+                    </div>
+                </div>
+
+                <p id="keyword-description">Click a card to see details and preview the effect.</p>
+                <div id="preview" class="preview-box">Live Preview</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dnyaneshwar Dhananjay Potdar</p>
+        </div>
+    </footer>
+
+    <script src="session3.js"></script>
+</body>
+
+</html>
