@@ -1,12 +1,29 @@
----
-##  How to Run
-1. Download or clone this repository.
-2. Open `index.html` in your browser.
-3. Use the **tabs** to view keywords or type in the **search bar** to filter.
+# Web Devlopment - Session 1: Introduction
+
+## Overview
+
+This is the **Session 1** project for the web development.  
+The goal of this session is to create a **basic HTML structure** and demonstrate **semantic HTML elements**. This serves as the foundation for future sessions.
+
 ---
 
-## Technologies Used
+## Features
 
-- **HTML5** – structure
-- **CSS3** – styling and responsive layout
-- **JavaScript (ES6)** – dynamic rendering, search, and tab switching
+- Semantic HTML structure including:
+  - `<header>` with navigation
+  - `<main>` for content
+  - `<section>` for individual parts
+  - `<footer>` for page footer
+- Cards showcasing **basic HTML elements**:
+  - `<div>`: Defines a section or division
+  - `<p>`: Defines a paragraph
+  - `<a>`: Defines a hyperlink
+- Responsive layout ready for further styling in later sessions.
+
+---
+
+## Files
+
+- `session1.html` - Main HTML page with semantic structure and cards
+- `session1.css` - Styles for layout, cards, and responsive design
+- `session1.js` - Optional JavaScript (for future interactive features)
